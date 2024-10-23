@@ -1,0 +1,62 @@
+/* Skip link styling */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Hide by default */
+    left: 10px;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px; /* Show when focused */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+.styled-image {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.styled-image:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* nth-child example */
+.grid img:nth-child(odd) {
+    border-radius: 15px;
+}
